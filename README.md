@@ -62,3 +62,14 @@ Contoh struktur data:
 Nama: MOHAMMAD FARHAN EFFENDI
 
 Mata Kuliah: PENGEMBANGAN APLIKASI BERBASIS WEB
+
+## Fitur CRUD
+* Menambahkan data pekerjaan
+* Menampilkan data dalam bentuk tabel
+* Mengubah data berdasarkan ID
+* Menghapus data
+
+## Catatan
+* Data digunakan hanya untuk keperluan pembelajaran
+* Website yang digunakan merupakan situs latihan scraping
+
