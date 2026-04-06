@@ -20,3 +20,45 @@ Percobaan 1/
 ├── data.json      # Database hasil scraping (JSON)
 ├── data.csv       # Database hasil scraping (CSV)
 └── README.md      # Dokumentasi project
+```
+## Cara Menjalankan
+1. Install dependency
+
+Buka terminal atau command prompt, lalu jalankan perintah berikut untuk menginstal library yang diperlukan:
+```text
+pip install requests beautifulsoup4 pandas
+```
+
+2. Jalankan scraping
+
+Gunakan perintah ini untuk mengambil data terbaru dari website:
+```text
+python scraper.py
+```
+
+3. Jalankan CRUD
+
+Gunakan perintah ini untuk mengelola data (menambah, melihat, atau menghapus) yang ada di file penyimpanan:
+```text
+python crud.py
+```
+## Output
+Program akan menghasilkan dua jenis file penyimpanan:
+
+* data.json (format JSON)
+* data.csv (format CSV)
+
+Contoh struktur data:
+```text
+{
+    "id": 1,
+    "title": "A Light in the Attic",
+    "price": "£51.77",
+    "stock": "In stock"
+}
+```
+👤 Author
+
+Nama: MOHAMMAD FARHAN EFFENDI
+
+Mata Kuliah: PENGEMBANGAN APLIKASI BERBASIS WEB
