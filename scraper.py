@@ -20,17 +20,17 @@ def run_scraper():
                 "stock": "In Stock"
             })
         
-        # Simpan ke JSON
-        with open('data.json', 'w') as f:
-            json.dump(scraped_data, f, indent=4)
+        # Simpan ke JSON dengan encoding UTF-8 agar simbol £ aman
+        with open('data.json', 'w', encoding='utf-8') as f:
+            json.dump(scraped_data, f, indent=4, ensure_ascii=False)
             
-        # Simpan ke CSV
+        # Simpan ke CSV dengan encoding UTF-8
         df = pd.DataFrame(scraped_data)
-        df.to_csv('data.csv', index=False)
+        df.to_csv('data.csv', index=False, encoding='utf-8')
         
-        print("Scraping selesai! data.csv dan data.json telah diperbarui.")
+        print("Scraping selesai! data.csv dan data.json telah diperbarui dengan format yang benar.")
     else:
-        print("Gagal akses website.")
+        print(f"Gagal akses website. Status: {response.status_code}")
 
 if __name__ == "__main__":
     run_scraper()
